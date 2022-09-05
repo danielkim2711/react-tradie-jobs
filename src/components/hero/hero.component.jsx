@@ -3,7 +3,7 @@ import SearchBox from '../search-box/search-box.component';
 import './hero.styles.css';
 import backgroundImage from '../../assets/images/background.jpg';
 
-const Hero = () => {
+const Hero = ({ onSearchChange }) => {
   return (
     <div className='hero-container'>
       <div className='overlay'></div>
@@ -13,6 +13,7 @@ const Hero = () => {
         <SearchBox
           className='hero-search-box'
           placeholder='Search jobs by title'
+          onChangeHanlder={onSearchChange}
         />
       </div>
     </div>

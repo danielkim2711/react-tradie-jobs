@@ -1,10 +1,8 @@
-import jobs from '../../db';
-
 import Card from '../card/card.component';
 
 import './card-list.styles.css';
 
-const CardList = () => {
+const CardList = ({ jobs }) => {
   return (
     <div className='card-list'>
       <p className='card-list-length'>
