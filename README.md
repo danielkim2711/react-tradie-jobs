@@ -37,6 +37,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.\
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+Or you can also visit this URL to see the live demo.\
+https://react-tradie-jobs.vercel.app
+
 <h3>:star: List of Packages Used</h3>
 <a href="https://www.npmjs.com/package/uuid">uuid</a>
 <br/>
