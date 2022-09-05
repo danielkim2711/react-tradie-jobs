@@ -9,8 +9,11 @@ const Hero = () => {
       <div className='overlay'></div>
       <img src={backgroundImage} alt='job' className='hero-image' />
       <div className='hero-search-container'>
-        <h2 className='hero-title'>All Jobs Everywhere</h2>
-        <SearchBox className='hero-search-box' placeholder='Search jobs' />
+        <h2 className='hero-title'>Find and Manage Your Jobs</h2>
+        <SearchBox
+          className='hero-search-box'
+          placeholder='Search jobs by title'
+        />
       </div>
     </div>
   );

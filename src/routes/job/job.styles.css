@@ -1,0 +1,45 @@
+.btn-go-back {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 20px 50px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-go-back:hover {
+  transform: scale(0.97);
+}
+
+.job-container {
+  position: relative;
+  padding: 100px;
+}
+
+.job-description-container {
+  display: flex;
+}
+
+.job-description-left {
+  margin-right: 50px;
+}
+
+.job-description-left p,
+.job-description-right p {
+  margin-bottom: 30px;
+}
+
+.job-description-left p {
+  font-weight: 700;
+}
+
+.job-description-right p {
+  font-weight: 300;
+}

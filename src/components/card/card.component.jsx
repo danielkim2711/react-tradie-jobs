@@ -1,17 +1,19 @@
+import { Link } from 'react-router-dom';
+
 import './card.styles.css';
 
 const Card = ({ job }) => {
   return (
-    <div className='card-container'>
+    <Link to={job.id} className='card-container'>
       <h1>{job.title}</h1>
       <div className='card-details'>
-        <p>{job.location}</p>
+        <p>{job.clientName}</p>
         <span>|</span>
-        <p>{job.salary}</p>
+        <p>{job.clientEmail}</p>
         <span>|</span>
         <p>{job.createdAt}</p>
       </div>
-    </div>
+    </Link>
   );
 };
 
