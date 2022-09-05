@@ -2,7 +2,7 @@ import { Link, useParams } from 'react-router-dom';
 
 import jobs from '../../db';
 
-import Note from '../../components/note/note.component';
+import NoteList from '../../components/note-list/note-list.component';
 
 import { IoArrowBack } from 'react-icons/io5';
 import './job.styles.css';
@@ -36,7 +36,7 @@ const Job = () => {
           </div>
         </div>
 
-        <Note />
+        <NoteList />
       </div>
     </>
   );
