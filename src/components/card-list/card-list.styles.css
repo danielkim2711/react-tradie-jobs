@@ -1,0 +1,15 @@
+.card-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-list-length {
+  align-self: flex-end;
+  margin-right: 250px;
+}
+
+.card-list-length span {
+  font-weight: 700;
+}

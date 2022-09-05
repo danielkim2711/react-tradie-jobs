@@ -1,0 +1,20 @@
+.card-container {
+  width: 60%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.card-container h1 {
+  font-size: 28px;
+}
+
+.card-details {
+  display: flex;
+  align-items: center;
+}
+
+.card-details span {
+  margin: 0 20px;
+}
