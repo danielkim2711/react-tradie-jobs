@@ -33,10 +33,16 @@ npm start
 ```
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-​
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.\
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+<h3>:star: List of Packages Used</h3>
+<a href="https://www.npmjs.com/package/uuid">uuid</a>
+<br/>
+<a href="https://www.npmjs.com/package/react-icons">React Icons</a>
+<br/>
+<a href="https://www.npmjs.com/package/react-toastify">React Toastify</a>
 
 <h3>:star: Design Inspiration</h3>
 <a href="https://www.tech5.co.nz/jobs">Tech5</a>
