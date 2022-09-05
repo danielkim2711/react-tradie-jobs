@@ -2,27 +2,49 @@ import { useState } from 'react';
 
 import { AiOutlinePlus } from 'react-icons/ai';
 
+import Note from '../note/note.component';
+
 import './note-list.styles.css';
 
 const NoteList = () => {
   const [notes, setNotes] = useState([]);
 
-  const onClickHandler = () => {
+  const onAddNoteHandler = () => {
     const newNote = prompt('Please add a note');
-    console.log(newNote);
-    setNotes([...notes, newNote]);
+
+    if (newNote.trim() === '') {
+      alert('Please type something');
+    } else {
+      setNotes([...notes, newNote]);
+    }
+  };
+
+  const onEditNoteHandler = (index) => {
+    const newNotes = notes.slice();
+    const editedNote = prompt('Update note');
+
+    if (editedNote.trim() === '') {
+      alert('Please type something');
+    } else {
+      newNotes[index] = editedNote;
+      setNotes(newNotes);
+    }
   };
 
   return (
     <>
       <h2>Notes</h2>
-      <button className='note-btn' onClick={onClickHandler}>
+      <button className='note-btn' onClick={onAddNoteHandler}>
         <AiOutlinePlus style={{ marginRight: '10px' }} />
         Add Note
       </button>
 
-      {notes.map((note) => (
-        <h1>{note}</h1>
+      {notes.map((note, index) => (
+        <Note
+          key={index}
+          note={note}
+          onEditNoteHandler={() => onEditNoteHandler(index)}
+        />
       ))}
     </>
   );
