@@ -6,12 +6,12 @@
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  border: 1px solid #000;
   border-radius: 5px;
-  padding: 10px 20px;
-  margin: 20px 50px;
-  font-weight: 700;
+  border: 1px solid #000;
   cursor: pointer;
+  font-weight: 700;
+  margin: 20px 50px;
+  padding: 10px 20px;
 }
 
 .btn-go-back:hover {

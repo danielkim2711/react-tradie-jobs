@@ -10,6 +10,12 @@
   font-size: 28px;
 }
 
+.card-details-status-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .card-details {
   display: flex;
   align-items: center;
@@ -17,4 +23,31 @@
 
 .card-details span {
   margin: 0 20px;
+}
+
+.card-status {
+  border-radius: 15px;
+  color: #fff;
+  font-weight: 700;
+  padding: 5px 15px;
+}
+
+.card-status.card-status-scheduled {
+  background-color: yellowgreen;
+}
+
+.card-status.card-status-active {
+  background-color: green;
+}
+
+.card-status.card-status-invoicing {
+  background-color: orange;
+}
+
+.card-status.card-status-to-priced {
+  background-color: orangered;
+}
+
+.card-status.card-status-completed {
+  background-color: gray;
 }
