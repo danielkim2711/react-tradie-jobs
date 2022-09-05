@@ -2,7 +2,7 @@ import { Link, useParams } from 'react-router-dom';
 
 import jobs from '../../db';
 
-import Hero from '../../components/hero/hero.component';
+import Note from '../../components/note/note.component';
 
 import { IoArrowBack } from 'react-icons/io5';
 import './job.styles.css';
@@ -35,7 +35,8 @@ const Job = () => {
             <p>05/09/2022</p>
           </div>
         </div>
-        <button>Add Memo</button>
+
+        <Note />
       </div>
     </>
   );

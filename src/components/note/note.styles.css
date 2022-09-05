@@ -1,0 +1,12 @@
+.note-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  border-radius: 5px;
+  border: 1px solid #000;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 10px 15px;
+}
