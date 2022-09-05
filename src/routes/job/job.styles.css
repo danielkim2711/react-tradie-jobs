@@ -23,6 +23,39 @@
   padding: 100px;
 }
 
+.job-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-title-container .job-status {
+  border-radius: 15px;
+  color: #fff;
+  font-weight: 700;
+  padding: 5px 15px;
+}
+
+.job-status.job-status-scheduled {
+  background-color: yellowgreen;
+}
+
+.job-status.job-status-active {
+  background-color: green;
+}
+
+.job-status.job-status-invoicing {
+  background-color: orange;
+}
+
+.job-status.job-status-to-priced {
+  background-color: orangered;
+}
+
+.job-status.job-status-completed {
+  background-color: gray;
+}
+
 .job-description-container {
   display: flex;
 }
