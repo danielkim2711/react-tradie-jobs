@@ -10,7 +10,7 @@ const jobs = [
     clientName: 'Leanne Graham',
     clientEmail: 'jgraham@gmail.com',
     contactPhone: '021 123 4567',
-    createdAt: '05/09/2022',
+    createdAt: '05/09/2022 13:37',
   },
   {
     id: uuidv4(),
@@ -21,7 +21,7 @@ const jobs = [
     clientName: 'Ervin Howell',
     clientEmail: 'ehowell@gmail.com',
     contactPhone: '021 123 4567',
-    createdAt: '04/09/2022',
+    createdAt: '04/09/2022 16:17',
   },
   {
     id: uuidv4(),
@@ -32,7 +32,7 @@ const jobs = [
     clientName: 'Clementine Bauch',
     clientEmail: 'cbauch@gmail.com',
     contactPhone: '021 123 4567',
-    createdAt: '03/09/2022',
+    createdAt: '03/09/2022 20:57',
   },
   {
     id: uuidv4(),
@@ -43,7 +43,7 @@ const jobs = [
     clientName: 'Patricia Lebsack',
     clientEmail: 'plebsack@gmail.com',
     contactPhone: '021 123 4567',
-    createdAt: '02/09/2022',
+    createdAt: '02/09/2022 11:27',
   },
   {
     id: uuidv4(),
@@ -55,7 +55,7 @@ const jobs = [
     clientName: 'Chelsey Dietrich',
     clientEmail: 'cdietrich@gmail.com',
     contactPhone: '021 123 4567',
-    createdAt: '01/09/2022',
+    createdAt: '01/09/2022 08:11',
   },
 ];
 

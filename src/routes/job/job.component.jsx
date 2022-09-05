@@ -1,4 +1,6 @@
+import { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 import jobs from '../../db';
 
@@ -8,7 +10,23 @@ import { IoArrowBack } from 'react-icons/io5';
 import './job.styles.css';
 
 const Job = () => {
+  const [status, setStatus] = useState('scheduled');
+  const [newStatus, setNewStatus] = useState('');
+
   const { jobId } = useParams();
+
+  const onChangeStatusHandler = () => {
+    const answer = window.confirm(
+      'Are you sure you want to change the status?'
+    );
+
+    if (answer) {
+      setNewStatus(status);
+      toast.success('Status updated successfully');
+    } else {
+      toast.error('Error, please try again');
+    }
+  };
 
   return (
     <>
@@ -23,15 +41,37 @@ const Job = () => {
             </Link>
             <div className='job-title-container'>
               <h1>{job.title}</h1>
-              <p
-                className={`job-status ${
-                  job.defaultStatus === 'to priced'
-                    ? 'job-status-to-priced'
-                    : `job-status-${job.defaultStatus}`
-                }`}
-              >
-                {job.defaultStatus}
-              </p>
+              <div className='job-status-container'>
+                <p
+                  className={`job-status ${
+                    newStatus === 'to priced' ||
+                    (job.defaultStatus === 'to priced' && newStatus === '')
+                      ? 'job-status-to-priced'
+                      : `job-status-${
+                          newStatus ? newStatus : job.defaultStatus
+                        }`
+                  }`}
+                >
+                  {newStatus ? newStatus : job.defaultStatus}
+                </p>
+                <select
+                  className=''
+                  value={status}
+                  onChange={(e) => setStatus(e.target.value)}
+                >
+                  <option value='scheduled'>Scheduled</option>
+                  <option value='active'>Active</option>
+                  <option value='invoicing'>Invoicing</option>
+                  <option value='to priced'>To Priced</option>
+                  <option value='completed'>Completed</option>
+                </select>
+                <button
+                  className='btn-change-status'
+                  onClick={onChangeStatusHandler}
+                >
+                  Change Status
+                </button>
+              </div>
             </div>
             <div className='job-description-container'>
               <div className='job-description-left'>
@@ -39,7 +79,7 @@ const Job = () => {
                 <p>Location:</p>
                 <p>Client Email:</p>
                 <p>Contact Phone:</p>
-                <p>Date Published:</p>
+                <p>Date Created:</p>
               </div>
               <div className='job-description-right'>
                 <p>{job.clientName}</p>

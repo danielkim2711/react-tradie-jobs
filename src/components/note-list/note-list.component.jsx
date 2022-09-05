@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { toast } from 'react-toastify';
 
 import { AiOutlinePlus } from 'react-icons/ai';
 
@@ -28,6 +29,7 @@ const NoteList = () => {
     } else {
       newNotes[index] = editedNote;
       setNotes(newNotes);
+      toast.success('Note updated successfully');
     }
   };
 
